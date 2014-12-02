@@ -1,0 +1,58 @@
+@charset "UTF-8";
+// block center
+%center-block{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+%clearfix{
+  &:before,
+  &:after {
+    content: " "; // 1
+    display: table; // 2
+  }
+  &:after {
+    clear: both;
+  }
+}
+%text-overflow{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+%font-f-yahei{
+  font-family: "Microsoft YaHei";
+}
+
+// 背景图片
+%trans_5{
+ background:transparent url(../img/trans_5.png) repeat; 
+}
+
+
+// 盒模型
+%bs-border-box{
+  -webkit-box-sizing:border-box;
+  -moz-box-sizing:border-box;
+  -ms-box-sizing:border-box;
+  box-sizing:border-box;
+}
+%bs-content-box{
+  -webkit-box-sizing:content-box;
+  -moz-box-sizing:content-box;
+  -ms-box-sizing:content-box;
+  box-sizing:content-box;
+}
+
+
+%img-responsive{
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+%base-position{
+  position: relative;
+  left: 0;top: 0;
+}

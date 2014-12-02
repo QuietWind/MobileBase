@@ -1,0 +1,23 @@
+{
+  "name": "base",
+  "version": "0.0.0",
+  "homepage": "https://github.com/QuietWind/",
+  "authors": [
+    "boy <469973264@qq.com>"
+  ],
+  "description": "this is my project base",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.1",
+    "bootstrap": "~3.2.0",
+    "angular":"~1.3.0"
+  }
+}

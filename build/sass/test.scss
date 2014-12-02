@@ -1,0 +1,17 @@
+@import "compass";
+@import "test/*.png";
+@include  all-test-sprites; 
+
+$test-spacing: 8px;
+$test-layout: "vertical";
+
+@import "icon/*.png";
+@include  all-icon-sprites; 
+$test-spacing: 10px;
+$test-layout: "smart";
+
+
+@import "tag/*.png";
+@include  all-tag-sprites; 
+$test-spacing: 5px;
+$test-layout: "smart";

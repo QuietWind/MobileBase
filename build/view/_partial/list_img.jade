@@ -1,0 +1,77 @@
+//- 图片有头像
+mixin imglist(listID)
+	.afa-m-imgshow(id=listID)
+		ul.list
+			-for(var i=0;i<4;i++)
+				li.item
+					.img
+						a(href="#")
+							img(src="../img/list_img.jpg", alt="")
+						.user
+							img(src="../img/tou.jpg", alt="")
+							span.name 法国
+							span.time 2014-05-12
+					if block
+						block
+					else
+						.user
+							img.tou(src="../img/tou.jpg", alt="")
+							a(href="#")
+								i.icon.icon-like
+								| 34
+							a(href="#")
+								i.icon.icon-comment
+								| 23
+
+//- 没得头像
+mixin imglist_no_user(listID)
+	.afa-m-imgshow(id=listID)
+		ul.list
+			-for(var i=0;i<4;i++)
+				li.item
+					.img
+						a(href="#")
+							img(src="../img/list_img.jpg", alt="")
+					if block
+						block
+					else
+						.user
+							.w-grid-a
+								.w-block-a
+									img.tou(src="../img/tou.jpg", alt="")
+								.w-block-b.w-tr
+									a(href="#")
+										i.icon.icon-like
+										| 34
+									a(href="#")
+										i.icon.icon-comment
+										| 23
+
+
+//- 图片描述一行 半透明的图片列表
+mixin imglist_men(listID)
+	.afa-m-imgshow(id=listID)
+		ul.list
+			-for(var i=0;i<4;i++)
+				li.item
+					.img
+						a(href="#")
+							img(src="../img/list_img.jpg", alt="")
+						.men 
+							.bg
+							.word
+								a(href="#") 成都欢乐谷
+					if block
+						block
+					else
+						.user
+							.w-grid-a
+								.w-block-a
+									img.tou(src="../img/tou.jpg", alt="")
+								.w-block-b.w-tr
+									a(href="#")
+										i.icon.icon-like
+										| 34
+									a(href="#")
+										i.icon.icon-comment
+										| 23

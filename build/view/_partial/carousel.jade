@@ -1,0 +1,50 @@
+mixin carousel(idname)
+	.afa-m-roll(id=idname,data-role="roll")
+		ul.roll-list
+			-for(var i=0;i<4;i++)
+				li.roll-item
+					a(href="#")
+						img(src="../img/default_roll.jpg", alt="")
+		a.roll-btn-left(href="javascript:void(0);")
+		a.roll-btn-right(href="javascript:void(0);")
+		if block
+			block
+		else
+
+
+
+mixin fade(fadeID)
+	.afa-fade-change
+		.w-fade-in-out-wrapper-outer(data-role="fade")
+			ul.wrapper-list
+				-for(var i=0;i<4;i++)
+					li.img-item
+						a(href="#")
+							img(src="../img/b01.jpg", alt="")
+						.desc
+							h3 2014亚洲户外用品展览会
+							p.
+								20142014亚洲户外用品展览会2014亚洲户外用品展览会2014亚洲户外用品展览会2014亚洲户外用品展览会 20142014亚洲户外用品展览会2014亚洲户外用品展览会2014亚洲户外用品展览会2014亚洲户外用品展览会 20142014亚洲户外用品展览会2014亚洲户外用品展览会2014亚洲户外用品展览会2014亚洲户外用品展览会
+			.control-view
+				a.current(href="javascript:void(0);")
+				a(href="javascript:void(0);")
+				a(href="javascript:void(0);")
+				a(href="javascript:void(0);")
+
+mixin fade_min(fadeID)
+	.afa-fade-change
+		.w-fade-in-out-wrapper-outer(data-role="fade")
+			ul.wrapper-list.min
+				-for(var i=0;i<4;i++)
+					li.img-item
+						a(href="#")
+							img(src="../img/b01.jpg", alt="")
+						.desc
+							h3 2014亚洲户外用品展览会
+							p.
+								20142014亚洲户外用品展览会2014亚洲户外用品展览会2014亚洲户外用品展览会2014亚洲户外用品展览会 20142014亚洲户外用品展览会2014亚洲户外用品展览会2014亚洲户外用品展览会2014亚洲户外用品展览会 20142014亚洲户外用品展览会2014亚洲户外用品展览会2014亚洲户外用品展览会2014亚洲户外用品展览会
+			.control-view
+				a.current(href="javascript:void(0);")
+				a(href="javascript:void(0);")
+				a(href="javascript:void(0);")
+				a(href="javascript:void(0);")

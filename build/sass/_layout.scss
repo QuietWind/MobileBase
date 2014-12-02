@@ -1,0 +1,45 @@
+@charset "UTF-8";
+@import "variables";
+@import "mixins";
+@import "placeholders";
+
+.full-screen{
+	position:fixed;
+	width: 100%;
+	height: 100%;
+	top:0;
+	left:0;
+}
+//float 
+.w-cf{
+	@extend %clearfix;
+}
+.w-fl{
+	display: block;
+	float: left;
+}
+.w-fr{
+	display: block;
+	float: right;
+}
+.w-tl{
+	text-align: left;
+}
+.w-tc{
+	text-align: center;
+}
+.w-tr{
+	text-align: right;
+}
+.w-hide{
+	display:none;
+}
+.w-show{
+	display:block;
+}
+.w-p-fixed{
+	position: fixed;
+}
+.w-p-absolute{
+	position: absolute;
+}
