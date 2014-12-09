@@ -1,9 +1,6 @@
+
+###不上传的文件夹
+
 bower_components
 .sass-cache
 node_modules
-
-#-----------------------------
-# INVALID FILES
-# (for cross OS compatibility)
-#-----------------------------
-*[\<\>\:\"\/\\\|\?\*]*

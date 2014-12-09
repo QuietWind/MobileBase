@@ -103,7 +103,13 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-express');
   grunt.loadNpmTasks('grunt-open');
   grunt.loadNpmTasks('grunt-contrib-imagemin');
-  grunt.registerTask('imgmin', ['imagemin']);
-  grunt.registerTask('default', ['jshint', 'sass', 'jade', 'watch']);
+
+  /*自动刷新页面*/
   grunt.registerTask('server', ['express', 'open', 'watch']);
+  /*压缩图片*/
+  grunt.registerTask('imgmin', ['imagemin']);
+  /*默认任务*/
+  grunt.registerTask('default', ['sass', 'jade', 'watch']);
+  
+
 };

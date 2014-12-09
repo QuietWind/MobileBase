@@ -1,0 +1,125 @@
+@charset "UTF-8";
+@import "variables";
+@import "mixins";
+@import "placeholders";
+
+/* --------------------------------------------------------------------------
+    推荐路线
+     -------------------------------------------------------------------------- */
+.icon{
+	display: inline-block;
+	text-decoration: none;
+	vertical-align: middle;
+	&:hover{
+		text-decoration: none;
+	}
+}
+
+.icon-weixin,
+.icon-qq,
+.icon-sina{
+	width: 60px;
+	height: 60px;
+}
+.icon-weixin{
+	background:transparent url('../img/icon/share1.png') 0 0 no-repeat;
+	color: transparent;
+}
+.icon-qq{
+	background:transparent url('../img/icon/share1.png') -76px 0 no-repeat;
+	color: transparent;
+}
+.icon-sina{
+	background:transparent url('../img/icon/share1.png') -152px 0 no-repeat;
+	color: transparent;
+}
+
+
+.icon-like,
+.icon-comment,
+.icon-share{
+	position: relative;
+
+	width: 20px;
+	height: 20px;
+
+	background-image: url('../img/icon/afa_icon2.png');
+
+	background-repeat: no-repeat;
+}
+.icon-like{
+	background-position: 2px 0;
+}
+.icon-comment{
+	background-position: -19px 0;
+}
+.icon-share{
+	background-position: -39px 0;
+}
+
+.icon-afa-user{
+	background: transparent url(../img/icon/afa_user.png) no-repeat;
+	width: 18px;
+	height: 18px;
+
+	&.icon-user{
+		background-position: 0 -57px;
+	}
+	&.icon-password{
+		background-position: 0 0;
+	}
+}
+
+.icon-search{
+	background: url(../img/icon/search.png) no-repeat center;
+	width: 20px;
+	height: 20px;
+}
+
+.icon-calendar{
+	background: url(../img/icon/calendar.png) no-repeat center;
+	width: 30px;
+	height: 30px;
+}
+
+.icon-open{
+	background: url(../img/icon/open.png) no-repeat center;
+	width: 30px;
+	height: 30px;
+}
+.icon-close{
+	background: url(../img/icon/close.png) no-repeat center;
+	width: 30px;
+	height: 30px;
+}
+.icon-add{
+	background: url(../img/icon/add.png) no-repeat center;
+	width: 30px;
+	height: 30px;
+}
+
+.icon-h{
+	width: 30px;
+	height: 30px;
+	background:url('../img/icon/h.png') center no-repeat;
+}
+.icon-q{
+	width: 30px;
+	height: 30px;
+	background:url('../img/icon/q.png') center no-repeat;
+}
+.icon-a{
+	width: 30px;
+	height: 30px;
+	background:url('../img/icon/a.png') center no-repeat;
+}
+.icon-map{
+	width: 30px;
+	height: 30px;
+	background: url('../img/icon/map.png') center no-repeat;
+}
+.icon-l-map{
+	width: 20px;
+	height: 20px;
+	background: url('../img/icon/map_l.png') center no-repeat;
+}
